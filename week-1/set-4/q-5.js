@@ -5,14 +5,14 @@
 
 const capitalizeWords = arrayInput => {
     
+    let operation = [];
     let result = [];
-    
     for (let index = 0; index < arrayInput.length; index++) 
     {
-        [...operation] = arrayInput[index];
-                
+        operation = arrayInput[index].toUpperCase();
+        result[index] = operation;
     }
-    console.log(operation);
+    return result;
 }
 
 
