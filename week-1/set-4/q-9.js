@@ -7,8 +7,16 @@ const book = {
 };
 
 // Your ES6 code here
+const { title, authors, publisher} = book;
+
+let [author1OP ,author2OP] = authors ;
+const author1 = author1OP.name;
+const author2 = author2OP.name;
+
+const publisherName = publisher.name
 
 console.log(title); // JavaScript: The Definitive Guide
 console.log(author1); // David Flanagan 
-console.log(author2); // Yukihiro Matsumoto
+console.log(author2); // David Flanagan 
 console.log(publisherName); // O'Reilly Media
+
