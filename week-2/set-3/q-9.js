@@ -9,7 +9,7 @@ const cars = [
   
   // Your code here
   
-  const getCarModel = cars => cars.filter((car) => car.year >2012 ? car.name : '');
+  const getCarModel = cars => cars.filter((car) => car.year > 2012 ).map ((car) => car.model);
   
   const carModels = getCarModel(cars);
   console.log(carModels);
