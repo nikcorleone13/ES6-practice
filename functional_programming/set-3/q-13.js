@@ -9,7 +9,7 @@ const products = [
   
   // Your code here
   
-  const getTotalCost = products =>
+  const getTotalCost = products => products.reduce((sum,prod) => sum+= prod.price * prod.quantity, 0)
 
   console.log(getTotalCost(products)); 
   // Output: 150
