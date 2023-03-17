@@ -2,13 +2,12 @@
 
 const people = [
     {name: 'Jeena', age: 25},    
-    {name: 'Kareena', age: 65}, 
     {name: 'Priya', age: 30}, 
     {name: 'Naina', age: 45}
 ]
 // Your code here
 
-const oldestPersonName = inputArr => inputArr.reduce((ageMax, people) => people.age > ageMax ? ageMax = people.age : ageMax , 0)
+const oldestPersonName = inputArr => inputArr.reduce((ageMax, people) => people.age > ageMax.age ? people : ageMax)?.name;
 
 
 console.log(oldestPersonName(people)); 
