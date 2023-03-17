@@ -1,17 +1,15 @@
-// Write an ES6 function that takes an array of objects representing students with properties name and grade. 
-// Return the first student object that has a grade of "B" and they are also a scholarship student.
+// Write an ES6 function that takes an array of objects with name and age property, and returns the name of the oldest person.
 
-const students = [
-    { name: "John", grade: "B", scholarship: false },
-    { name: "Mary", grade: "A", scholarship: true },
-    { name: "Sam", grade: "A", scholarship: false },
-    { name: "Sarah", grade: "B", scholarship: true },
-  ];
-  
-  // Your code here
-    const findStudent = studObj => studObj.find((studObj) =>
-      studObj.grade == 'B' && studObj.scholarship == true )
-  
-  const student = findStudent(students);
-  console.log(student); 
-  // Output: { name: "Sarah", grade: "B", scholarship: true }
+const people = [
+    {name: 'Jeena', age: 25},    
+    {name: 'Kareena', age: 65}, 
+    {name: 'Priya', age: 30}, 
+    {name: 'Naina', age: 45}
+]
+// Your code here
+
+const oldestPersonName = inputArr => inputArr.reduce((max,curr) => max.age > curr.age? max :  curr )?.name
+
+
+console.log(oldestPersonName(people)); 
+// Output: 'Naina'
