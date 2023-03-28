@@ -1,6 +1,5 @@
 // Use this URL - https://example.com/api/profile/NC002 in which we are passing the id of a user to make a fake fetch call and display a welcome message to the user on the DOM. A fakeFetch has been provided. Use HTML, CSS & JS template in REPL or Vanilla template in CodeSandbox for this question.
-
-const fakeFetch = (url) => {
+ (url) => {
     return new Promise((resolve, reject) => {
       setTimeout(() => {
         if (url === "https://example.com/api/profile/NC002") {

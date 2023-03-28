@@ -6,7 +6,7 @@
 const checkForAlphabetA = (word) => {
   for (let i = 0; i < word.length; i++) 
   {
-    if( word[i] =='a')
+    if( word[i] ==='a' || word[i] ==='A')
       return ("Includes A");
   } 
   return("Does not include A")
@@ -16,6 +16,6 @@ const checkForAlphabetA = (word) => {
 
 console.log(checkForAlphabetA("Tanay")) // Includes a
 console.log(checkForAlphabetA("Jeep")) // Does not include a
-console.log(checkForAlphabetA("Jane")) // Includes a 
+console.log(checkForAlphabetA("JAne")) // Includes a 
 
 
